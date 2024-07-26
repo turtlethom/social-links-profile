@@ -17,7 +17,7 @@
     --h2-fs: 8rem;
     --h3-fs: 8rem;
 
-    --inter-font: 'Inter', sans-serif;
+    --inter-font: 'Inter', 'Arial' sans-serif;
 
     /* Font Weights */
     --bold-400: 400;
@@ -37,7 +37,7 @@ a {
 }
 
 main {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--inter-font);
 }
 
 img {
