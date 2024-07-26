@@ -80,24 +80,30 @@ img {
 
 .socials-menu li {
     font-weight: var(--bold-600);
-    padding: 0.75rem 0.5rem;
     border-radius: var(--bord-radius);
     width: 100%;
 }
 
 .socials-menu li a {
-    display: block;
-    size: 100%;
+    display: inline-block;
+    padding: 0.75rem 0.5rem;
+    inline-size: 100%;
+    block-size: 100%;
 }
 
-.socials-menu li:hover {
+.socials-menu li a:focus,
+.socials-menu li a:focus-visible,
+.socials-menu li a:hover {
+    border-radius: var(--bord-radius);
+    outline: none;
     background-color: hsl(var(--color-green));
     color: hsl(var(--color-grey-900));
 }
 
-.attribution { 
-    position: absolute;
+.attribution {
+    margin-block-start: 1rem;
+    position: relative;
     font-size: 11px; text-align: center;
-    bottom: 5rem;
+    bottom: 3rem;
 }
 .attribution a { color: hsl(var(--color-green)); }
