@@ -1,0 +1,71 @@
+/* ------------------------------ */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* Great Resource For Resetting CSS */
+
+/* Box-Sizing Adjustment */
+*, 
+::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Reset Margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* Set Up The Body */
+body {
+    line-height: 1.5;   /*Default = 1.4, but too small. Alt: 1.6 */
+    min-height: 100vh; /*Prevent Short Page Issue, No Scrolling */
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make Images Easy To Work With */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Make Form Elements Easy To Work With */
+input,
+button,
+textarea,
+select {
+    font: inherit; /*Normally, doesn't inherit font, which is a nightmare */
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
